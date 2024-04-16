@@ -1,0 +1,29 @@
+#hamburger-menu-icon {
+  display: none; /* Hide on larger screens */
+  cursor: pointer;
+}
+
+#navigation {
+  display: block; /* Initially visible */
+  position: absolute; /* Overlaps content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  text-align: center;
+  padding: 20px;
+  transform: translateX(-100%); /* Slide in from left initially */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens less than 768px wide */
+  #hamburger-menu-icon {
+    display: block; /* Show on smaller screens */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10; /* Ensure icon is on top of other elements */
+  }
+}
