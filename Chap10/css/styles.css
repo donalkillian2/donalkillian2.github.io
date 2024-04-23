@@ -62,18 +62,23 @@ label {
 
 /* Style rules for video*/
 video {
-	size: 20px 25px;
+	size: 10px 15px;
 }
 
 /* style rules for mobile viewport */
 
 /* Style rules to show mobile class and hide tab-desk class */
 .mobile {
-  display: block;
+	
 }
+	  
 .tab-desk {
   display: none;
+  
 }
+#nav-links {
+	  display: none;
+  }
 .mobile-tablet {
 	display: none;
 }
@@ -98,6 +103,24 @@ video {
 	width: 40px;   
 	color: #2a1f14;
 }
+.mobile-nav{
+	
+}
+
+
+	#questions p {
+		cursor: pointer;
+	}
+	#answer  {
+		text-align: center;
+		font-weight: bold;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#answer h2 {
+		display: none;
+	}
+
 #hamburger-menu-icon {
   display: none; /* Hide on larger screens */
   cursor: pointer;
@@ -105,7 +128,7 @@ video {
 
 #navigation {
   display: block; /* Initially visible */
-  position: absolute; /* Overlaps content */
+  position: ab; /* Overlaps content */
   top: 0;
   left: 0;
   width: 100%;
