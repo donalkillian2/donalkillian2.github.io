@@ -19,22 +19,6 @@ img {
 	margin = 0;
 }
 
-/* style rules for mobile viewport */
-
-/* Style rules to show mobile class and hide tab-desk class */
-.mobile {
-  display: block;
-}
-.tab-desk {
-  display: none;
-}
-
-/* style rules for header area */
-.mobile h1, .mobile h3 {
-  padding: 2%;
-  text-align: center;
-}
-
 /* style rules for main content */
 main {
   padding: 2%;
@@ -131,4 +115,20 @@ footer {
 footer a {
     color: #f3e6d8;
     text-decoration: none;
+}
+
+/* style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+.tab-desk {
+  display: none;
+}
+
+/* style rules for header area */
+.mobile h1, .mobile h3 {
+  padding: 2%;
+  text-align: center;
 }
