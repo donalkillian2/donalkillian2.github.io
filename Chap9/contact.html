@@ -2,7 +2,7 @@
 <!-- 
 	Student Name: Donal Killian
 	File Name: contact 
-	Date: 03/30/2024
+	Date: 03/24/2024
 -->
 <html lang="en">
 <head>
@@ -26,7 +26,7 @@
 	<a href="about.html">About Us</a> &nbsp; &#9672; &nbsp; 
 	<a href="partnership.html">Partnership</a> &nbsp; &#9672; &nbsp; 
 	<a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp; 
-	<a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp; 
+	<a href="faq.html">FAQs</a> &nbsp; &#9672; &nbsp; 
 	<a href="contact.html">Contact</a></p>
 </nav>
 <main>
@@ -35,6 +35,43 @@
 		<p>Office: (814) 555-8989</p>
 		<p>Email: <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
 		<p>Address: <a href="www.google.com">8989 Rescue Drive, Ocala, FL 34471</a></p>
+	</div>
+	<div id="form">
+		<h2>Complete the form below and we will contact you soon,</h2>
+		<form class="form-grid"><!-- Start Form -->
+			
+			<fieldset>
+				<legend>Contact Information</legend>
+				
+				<label value="fName">First Name: </label>
+				<input type=text type="fName" id="fName">
+				
+				<label value="lName">Last Name: </label>
+				<input type=text type="lName" id="lName">
+				
+				<label value="bName">Name of Business: </label>
+				<input type=text type="bName" id="bName">
+				
+				<label value="email">Email: </label>
+				<input type=email type="email" id="email">
+				
+				<label value="phone">Phone: </label>
+				<input type=tel type="phone" id="phone">
+			</fieldset>
+			
+			<fieldset>
+				<legend>Additional Information</legend>
+				
+				<p>I would like more Information about:</p>
+				<label value="wild"><input type=radio value="info" id="wild" > Wildlife </label>
+				<label value="other"><input type=radio value="other" id="other" > Other, please specify below.</label>
+				<label value="questions">What questions do you have for us?</label>
+				<text-area value="questions" id="questions" rows=5 cols=35></text-area>
+			</fieldset>
+			
+			<button type"submit" id="submit" value="submit" class="btn">button</button>
+			
+		</form>
 	</div>
 </main>
 <footer>
