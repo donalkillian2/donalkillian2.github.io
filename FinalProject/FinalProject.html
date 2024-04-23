@@ -2,68 +2,102 @@
 <!--
 	Student Name: Donal Killian
 	File Name: FinalProject
-	Start Date: 02/22/2024
+	Start Date: 04/22/2024
 	Finish Date: --
 -->
-<html lang="en"> <!--Establishes The Language as English-->
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/styles.css"></link>
-		
-		<title>Wild Nest Bird Rehab</title><!-- This will apper in the tab of the website.-->
-		<meta charset="utf-8"> <!-- This establishes the font of the website.-->
-	</head>
+
+<!--Establishes the document as an HTML document and sets The Language as English-->
+<html lang="en">
+
+<!--This is where the title and any other head info will be displayed-->
+<head>
+	<!-- This is a like to the css styles sheet (styles.css)-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css"></link>
 	
-	<header><!-- Any website headers and subheaders will go here.-->
-		<div class="tab-desk">
-			<a href="index.html"><img src="images/logo.png" alt="Wild Rescues logo"></a>
+	<!-- This will apper in the tab of the website.-->
+	<title>Home | Georgia Bird Rehab</title>
+	
+	<!-- This establishes the font of the website.-->
+	<meta charset="utf-8"> 
+</head>
+
+<!--This is where the main information of the website will go-->
+<body>
+	<!--Div allows us to divide or separate areas of the website. Div may have an id-->
+	<div id="container">
+
+		<div id="header">
+
+			<!-- Any website headers and subheaders will go here.-->
+			<header>
+				<!-- h1 is the largest header-->
+				<h1>Georgia Bird Rehab</h1>
+				<!-- h5 is the smallest header-->
+				<h5></h5>
+			</header>
+		
+		</div>
+
+
+		<div id="nav">
+			<!-- These will be links to navigate between pages on the website.-->
 			<nav>
-				<ul>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+				<!--These are example of links to a seprate webpage-->
+				<p><a href="FinalProject.html">Home</a>&nbsp; &#9672; &nbsp; <!--This adds a black dimeond after each link-->
+					<a href="aboutUS.html">About Us</a> &nbsp; &#9672; &nbsp; 
+					<a href="foundABird.html">Found A Bird</a> &nbsp; &#9672; &nbsp; 
+					<a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp; 
+					<a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp; 
+					<a href="contact.html">Contact</a> &nbsp; &#9672; &nbsp; 
+					<a href="birdsOfGa.html">Birds of G.A.</a>
+					</p>
 			</nav>
 		</div>
-		<div class="mobile">
-			<h1>&#x1F406; Wild Nest Bird Rehab.</h1>
-			<h3>Rescue. Rehabilitate. Release.</h3>
+		
+	</div>
+		
+		<!---<div id="main>-->
+			<!-- Use the main area to add the main content to the website -->
+			<main>
+				<!--largest header-->
+				<h1>Welcome</h1>
+				<!--This allows us to make a paragraph-->
+				<p>goal is to educate the genral public about the importance of all GA birds
+				and their native habitats. We promote, not cutting down trees in the spring 
+				so that parent birds can rais their chicks. Not using petisides so parent 
+				birds can feed their chicks. Keeping all cats indoors so fledglings can learn 
+				to fly. Human activity and free roaming cats are responsable for the declining 
+				bird population in Georgia.</p>
+				
+				<!--This is an unorderd list-->
+				<ul>
+					<li>Resuse</li>
+					<li>Care</li>
+					<li>Rehabilitation</li>
+					<li>Preservation</li>
+					
+				</ul>
+				
+				<video controls poster="bird11.jpeg" width="500px" height="500px">
+					<source src="video.mp4" type="video/mp4">
+					<source src="video.webm" type="video/webm">
+				</video>
+				
+				</table>
+			</main>
+		<!--</div>-->
+		<div id="footer">
+			<!-- Copyright info along with any footer or subfooter will go here.-->
+			<footer>
+				<!--Include Copyright information in footer-->
+				<p>&copy; Copyright 2024. All Rights Reserved.</p>
+				
+				<!--This is an email link-->
+				<p><a href="mailto:ContactUs@email.com">ContactUs@email.com</a></p>
+				
+				<!-- This is a telephone link-->
+				<p><a href="tel:6786743114">Call me at 678-674-3114</a>
+			</footer>
 		</div>
-  
-		<h1> <!-- h1 is the largest header-->
-			<element> &#128062; Wild Nest Bird Rehab.</element>
-		</h1>
-
-		<h3>
-			<element> Rescue. Rehabilitate. Release.</element>
-		</h3>
-		
-		
-	</header>
-	
-	<nav><!-- These will be links to navigate between pages on the website.-->
-		<p><a href="FinalProject.html">Home</a>&nbsp; &#9672; &nbsp; 
-		<a href="aboutUS.html">About Us</a> &nbsp; &#9672; &nbsp; 
-		<a href="foundABird.html">Found A Bird</a> &nbsp; &#9672; &nbsp; 
-		<a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp; 
-		<a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp; 
-		<a href="contact.html">Contact</a></p>
-	</nav>
-	
-	<main><!-- Use the main area to add the main content to the website -->
-	
-		<h2>
-			<element> Our Latest Rescue: Baby Birds,</element>
-			<element><img src="bird1.jpg" alt"Bird1" height="150" width="150"></element>
-			<element><p>Meet our latest rescues, ___</p></element>
-		</h2>
-		
-		<div>
-			<p>Welcome to Wild Nest Bird Rehab. Our mission is ...</p>
-		</div>
-	</main>
-	
-	<footer><!-- Copyright info along with any footer or subfooter will go here.-->
-		<p>&copy; Copyright 2024. All Rights Reserved.</p>
-		<p><a href="ContactUs@email.com">ContactUs@email.com</a></p>
-	</footer>
-	
+</body>
 </html>

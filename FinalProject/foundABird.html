@@ -1,60 +1,122 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 	Student Name: Donal Killian
 	File Name: foundABird
-	Date: 02/22/2024
+	Start Date: 04/22/2024
+	Finish Date: --
 -->
+
+<!--Establishes the document as an HTML document and sets The Language as English-->
 <html lang="en">
+
+<!--This is where the title and any other head info will be displayed-->
 <head>
+	<!-- This is a like to the css styles sheet (styles.css)-->
 	<link rel="stylesheet" type="text/css" href="css/styles.css"></link>
-		
-	<title>Wild Nest Bird Rehab - Found a Bird</title>
-	<meta charset="utf-8">
+	
+	<!-- This will apper in the tab of the website.-->
+	<title>Found A Bird | Georgia Bird Rehab</title>
+	
+	<!-- This establishes the font of the website.-->
+	<meta charset="utf-8"> 
 </head>
 
-<header>
-	<div class="tab-desk">
-		<a href="index.html"><img src="images/logo.png" alt="Wild Rescues logo"></a>
-		<nav>
-			<ul>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+<!--This is where the main information of the website will go-->
+<body>
+	<!--Div allows us to divide or separate areas of the website. Div may have an id-->
+	<div id="container">
+
+		<div id="header">
+
+			<!-- Any website headers and subheaders will go here.-->
+			<header>
+				<!-- h1 is the largest header-->
+				<h1>Found a Bird</h1>
+				<!-- h5 is the smallest header-->
+				<h5></h5>
+			</header>
+		
+		</div>
+
+
+		<div id="nav">
+			<!-- These will be links to navigate between pages on the website.-->
+			<nav>
+				<!--These are example of links to a seprate webpage-->
+				<p><a href="FinalProject.html">Home</a>&nbsp; &#9672; &nbsp; <!--This adds a black dimeond after each link-->
+					<a href="aboutUS.html">About Us</a> &nbsp; &#9672; &nbsp; 
+					<a href="foundABird.html">Found A Bird</a> &nbsp; &#9672; &nbsp; 
+					<a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp; 
+					<a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp; 
+					<a href="contact.html">Contact</a> &nbsp; &#9672; &nbsp; 
+					<a href="birdsOfGa.html">Birds of G.A.</a>
+					</p>
+			</nav>
+		</div>
 	</div>
-	<div class="mobile">
-		<h1>&#x1F406; Wild Nest Bird Rehab.</h1>
-		<h3>Rescue. Rehabilitate. Release.</h3>
-	</div>
-	
-	<h1>
-		<element> &#128062; Wild Nest Bird Rehab.</element>
-	</h1>
-	<h3>
-		<element> Found a Bird</element>
-	</h3>
-</header>
-
-<nav>
-	<p><a href="FinalProject.html">Home</a>&nbsp; &#9672; &nbsp; 
-		<a href="aboutUS.html">About Us</a> &nbsp; &#9672; &nbsp; 
-		<a href="foundABird.html">Found A Bird</a> &nbsp; &#9672; &nbsp; 
-		<a href="gallery.html">Gallery</a> &nbsp; &#9672; &nbsp; 
-		<a href="faqs.html">FAQs</a> &nbsp; &#9672; &nbsp; 
-		<a href="contact.html">Contact</a></p>
-</nav>
-<main>
-	<!-- Use the main area to add the main content to the website -->
-	<p>This is a page for resquing birds.</p>
-	<p>Bird resquing information</p>
-	<p>Will you partner with us? We need caring volunteers to help care 
-	for our animals. You can also donate, become a member, or become a 
-	sponsor. Contact us today.</p>
-</main>
-<footer>
-	<p>&copy; Copyright 2024. All Rights Reserved.</p>
-	<p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
-</footer>
-
-
+		
+		<!---<div id="main>-->
+		<!-- Use the main area to add the main content to the website -->
+		<main>
+			<!--This is where we will creat our form-->
+			<div id="form">
+				<h2>If you have found a bird please fill out the following form.</h2>
+				
+				<form class="form-grid">
+					<fieldset>
+						<legend>Bird's Information</legend>
+						
+						<label value="species">Birds species/description: </label>
+						<input type=text type="species" id="species">
+							
+						<label value="loc">Location Found: </label>
+						<input type=text type="loc" id="loc">
+							
+						<label value="health">Is it injured:</label>
+						<label>Yes<input type=radio type="yesHealth" id="yesHealth"></label>
+						<label>No<input type=radio type="noHealth" id="noHealth"></label>
+							
+						<label value="helthDes">If so what is the injury: </label>
+						<input type=text type="helthDes" id="helthDes">
+							
+						<label value="additionalInfo">Any Additional Info: </label>
+						<input type=text type="additionalInfo" id="additionalInfo">
+					</fieldset>
+					<fieldset>
+						<legend>Contact Information</legend>
+							
+						<label value="fName">First Name: </label>
+						<input type=text type="fName" id="fName">
+				
+						<label value="lName">Last Name: </label>
+						<input type=text type="lName" id="lName">
+				
+						<label value="email">Email: </label>
+						<input type=email type="email" id="email">
+				
+						<label value="phone">Phone: </label>
+						<input type=tel type="phone" id="phone">
+					</fieldset>
+						
+					<button type"submit" id="submit" value="submit" class="btn">Submit Form</button>
+						
+				</form>
+				
+				</div>
+			</main>
+		<!--</div>-->
+		<div id="footer">
+			<!-- Copyright info along with any footer or subfooter will go here.-->
+			<footer>
+				<!--Include Copyright information in footer-->
+				<p>&copy; Copyright 2024. All Rights Reserved.</p>
+				
+				<!--This is an email link-->
+				<p><a href="mailto:ContactUs@email.com">ContactUs@email.com</a></p>
+				
+				<!-- This is a telephone link-->
+				<p><a href="tel:6786743114">Call me at 678-674-3114</a>
+			</footer>
+		</div>
+</body>
 </html>

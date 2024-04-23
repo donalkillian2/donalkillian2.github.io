@@ -1,134 +1,142 @@
 /* 
 	Author: Donal Killian
-	Date: 02/24/2024
+	Date: 04/21/2024
 	File Name: styles.css
 */
-/* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
 
-/* Style rules for body and images */
+/*This will access and set rules to any elements in the body*/
 body {
-	background-color: #f6eee4;
-}
-img {
-	max-width: 100%;
-	margin = 0;
-}
-
-/* style rules for mobile viewport */
-
-/* Style rules to show mobile class and hide tab-desk class */
-.mobile {
-  display: block;
-}
-.tab-desk {
-  display: none;
+	/*Sets background color*/
+	background-color: lightblue;
+	
+	/*Sets the amount of space around block element, the margin, on all sides*/
+	margin: 2em;
+	/*	Or	*/
+	/*margin: 2em 2em 2em 2em;*/
+	
+	/*Sets the amount of space between content and the border of its block element*/
+	/*padding: 5em;*/
+	
+	/*Sets the format of the block element's border*/
+	border: solid 1em blue;
 }
 
-/* style rules for header area */
-.mobile h1, .mobile h3 {
-  padding: 2%;
-  text-align: center;
+/*Sets the style for anything in the div where id = "container"*/
+#container {	
+	padding: 2em;
+	background-color: blue;
+}
+nav{
+	font-size: 20;
+}
+#header {
+	background-color: blue;
+}
+#head {
+	background-color: blue;
 }
 
-/* style rules for main content */
-main {
-  padding: 2%;
-}
-
-main p {
-  font-size: 1.25em;
-}
-
-main h3 {
-  padding-top: 2%;
-}
-
-main ul {
-  list-style-type: square;
-}
-
-.link {
-  color: #4d3319;
-  font-weight: bold;
-  font-style: italic;
-  text-decoration: none;
-}
-
-.action {
-  font-size: 1.75em;
-  font-weight: bold;
-  text-align: center;
-}
-
-#contact {
-  text-align: center;
-}
-
-
-/* Style rules for navigation area.*/
+/*Sets Style for elements in <nav>*/
 nav {
-	background-color: #2a1f14;
+	/*Sets the font*/
+	font-family: arial;
+	text-align: center;
+	background-color: grey;
 }
-nav ul {
-	list-style-type: none;
-	margin: 0;
+/*Sets style for all elements in main*/
+main {
+	font-size: 1.5em;
+}
+/*Sets style for all h1*/
+h1 {
+	/*aligns text on webpage */
 	text-align: center;
 }
-nav li {
-	display: inline;
-	font-size: 1.5em;
-	font-family: Geneva, arial, sans-serif;
+/*Sets Style for h2 in main*/
+main h2 {
+	text-align: center;
+}
+
+/* Style rules for form element*/
+fieldset input text-area {
+	margin-bottom: 2%;
+}
+fieldset legend {
 	font-weight: bold;
+	font-size: 1.25em;
 }
-nav li a {
+label {
 	display: block;
+	padding-top: 2%;
+}
+#submit {
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 2%;
+	background-color: #78593a;
 	color: #f6eee4;
-	padding: 0.5em 2em;
-	text-decoration: none;
+	font-size: 1.25em;
+	border-radius: 10px;
 }
 
-/* Style rules for main content */
-main {
-    padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
-}
-main p {
-    font-size: 1.25em;
-}
-main h3 {
-    padding-top: 2%;
-}
-main ul {
-    list-style-type: square;
-}
-.link {
-    color: #4d3319;
-    font-weight: bold;
-    font-style: italic;
-}
-.action {
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
-}
-#contact {
-    text-align: center;
+/* Style rules for image gallary*/
+#column {
+	position: relative;
+	float: left;
+	width: 33.3%;
+	padding: 5px;
 }
 
-/* Style rules for footer content */
+#row: {
+	content: "";
+	position: relative;
+	clear: both;
+	display: table;
+}
+#row a : hover {
+		display: block;
+		background: #c93;
+}
+
+figure {
+	position :relative;
+	text-align: center;
+	width: 33.3%;
+}
+
+/*Style rules for table*/
+/* Style rules for table*/
+table {
+	border: 1px solid #2a1f14;
+	text-align: center;
+}
+table caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1%;
+}
+table th td {
+	border: 5px solid #2a1f14;
+	padding: 1%;
+	background-color: grey
+}
+table th {
+	background-color: 2a1f14;
+	color: Black;
+	font-size: 1.15em;
+}
+table tr:nth-child(odd) {
+	background-color: #deccba
+}
+
+/*Styles for video*/
+video {
+	size: 500px 500px;
+}
+/* Style rules for the footer*/
 footer {
-    text-align: center;
-    font-size: 0.85em;
-    background-color: #2a1f14;
-    color: #f6eee4;
-    padding: 1% 0;
-}
-footer a {
-    color: #f3e6d8;
-    text-decoration: none;
+	background-color: blue;
+	text-bottom: white;
 }
